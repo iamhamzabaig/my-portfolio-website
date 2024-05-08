@@ -9,14 +9,52 @@
 :root {
 	--font-family-primary: "Inter", sans-serif;
 	--background-primary: #0a192f;
-	--heading-primary: #ccd6f6;
+	--heading-primary: #e2e8f0;
+	--text-color-primary: #8a9ab4;
 }
 
 body {
 	font-family: var(--font-family-primary);
 	background-color: var(--background-primary);
-	color: var(--heading-primary);
-	width: 100%;
+	color: var(--text-color-primary);
 	height: 100%;
-
+	width: 100%;
+	overflow: hidden; /* or overflow: auto; */
+}
+.smallHeading {
+	color: var(--heading-primary);
+}
+ul {
+	padding: 0;
+	text-align: start;
+}
+li {
+	position: relative;
+}
+a {
+	text-decoration: none;
+	letter-spacing: 0.15em;
+}
+a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	color: #fff;
+	background: #fff;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+a:hover:after {
+	width: 100%;
+	left: 0;
+	color: #fff;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+	}
 }
