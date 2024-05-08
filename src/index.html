@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="./output.css" rel="stylesheet" />
-	</head>
-	<body>
-		<h1 class="text-3xl">Hello world!</h1>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="grid grid-cols-12 gap-4 h-screen">
+    <div class="col-span-1 h-full">Column 1</div>
+    <div class="col-span-10 h-full">Column 10</div>
+    <div class="col-span-1 h-full flex flex-col justify-end items-center">
+      <label class="transform rotate-90 border-r-2 border-gray-500"
+        >hamzamunawar@gmail.com</label
+      >
+      <label class="transform rotate-90 border-r-2 border-gray-500"></label>
+    </div>
+  </body>
 </html>
